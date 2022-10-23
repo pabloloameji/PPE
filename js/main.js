@@ -15,7 +15,7 @@ const menu_html = `<ul class="nav navbar-nav">
 <a href="javascript:void(0);" id="item_2">JUEGOS</a>
 </li>
 <li>
-<a href="javascript:void(0);" id="item_3" class="scroll">CONTACTO</a>
+<a href="#contacto" class="scroll">CONTACTO</a>
 </li>`;
 let sesion_on = menu_html + `
 <li>
@@ -73,11 +73,9 @@ function cerrarSesion() {
 function asignarNavegacion() {
     menu_items.push(document.getElementById("item_1"));
     menu_items.push(document.getElementById("item_2"));
-    menu_items.push(document.getElementById("item_3"));
 
     paginas["item_1"] = "index.html";
     paginas["item_2"] = "juegos.html";
-    paginas["item_3"] = "#contacto";
 
     for (var i of menu_items) {
         i.addEventListener("click", abrirPagina);
