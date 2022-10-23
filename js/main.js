@@ -3,7 +3,6 @@ let menu_items = [];
 let paginas = [];
 var productos = [];
 var iniciarLogin = undefined, iniciarRegistro = undefined;
-let cont_sesion;
 let logeado = false;
 const menu_html = `<ul class="nav navbar-nav">
 <div class="agileits-logo">
@@ -35,7 +34,6 @@ window.onload = function () {
     contenedor_menu.innerHTML = menu_html;
     setTimeout(hideURLbar, 0);
 
-    cont_sesion = document.querySelector(".menu");
     cambiarSesion(JSON.parse(localStorage.getItem("logeado")));
 
     if (iniciarLogin) {
@@ -45,14 +43,7 @@ window.onload = function () {
     if (iniciarRegistro) {
         iniciarRegistro();
     }
-    if (window.hasOwnProperty("pintarGaleria")) {
-        llenarProductos();
-        pintarGaleria();
-    }
 
-    if (window.hasOwnProperty("leerProductoActual")) {
-        leerProductoActual();
-    }
     asignarNavegacion();
     activarPaginaActual();
 }
@@ -63,10 +54,10 @@ function cambiarSesion(bandera) {
     localStorage.setItem("logeado", logeado);
 
     if (logeado) {
-        cont_sesion.innerHTML = sesion_on;
+        contenedor_menu.innerHTML = sesion_on;
     }
     else {
-        cont_sesion.innerHTML = sesion_off;
+        contenedor_menu.innerHTML = sesion_off;
 
         if (cerrarSesion()) {
             location.href = "index.html";
