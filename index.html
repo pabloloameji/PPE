@@ -41,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
-
+    <script src="js/main.js"></script>
     <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
@@ -68,19 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-                                <nav>
-                                    <ul class="nav navbar-nav">
-                                        <div class="agileits-logo">
-                                            <h1><a href="index.html">Gaming <span>Store</span></a></h1>
-                                        </div>
-                                        <li class="active"><a href="index.html">Home</a></li>
-                                        <li><a href="juegos.html">Latest Games</a></li>
-                                        <li><a href="#contacto">Contacto</a></li>
-                                        <li><a href="">Ingresar</a></li>
-                                        <li><a href="">Registrar</a></li>
-                                        <!--<li><a href="#team" class="scroll">Team</a></li>-->
-                                    </ul>
-                                </nav>
+                                <nav class="menu"></nav>
                             </div>
                             <!-- /.navbar-collapse -->
                         </nav>
@@ -283,360 +271,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!-- //modal -->
-    <!-- testimonial -->
-    <div class="jarallax testimonial" id="testimonial">
-        <div class="testimonial-dot">
-            <div class="container">
-                <div class="agileits-title testimonial-heading">
-                    <h3>Testimonial</h3>
-                </div>
-                <div class="w3-agile-testimonial">
-                    <div class="slider">
-                        <div class="callbacks_container">
-                            <ul class="rslides callbacks callbacks1" id="slider3">
-                                <li>
-                                    <div class="testimonial-img-grid">
-                                        <div class="testimonial-img t-img1">
-                                            <img src="images/ts1.jpg" alt="" />
-                                        </div>
-                                        <div class="testimonial-img">
-                                            <img src="images/ts2.jpg" alt="" />
-                                        </div>
-                                        <div class="testimonial-img t-img2">
-                                            <img src="images/ts3.jpg" alt="" />
-                                        </div>
-                                        <div class="clearfix"> </div>
-                                    </div>
-                                    <div class="testimonial-img-info">
-                                        <p>Nunc interdum elit nec sapien vehicula, ut blandit nulla ultrices. Sed
-                                            ullamcorper metus eget efficitur rutrum. Aliquam a nunc odio. Aenean
-                                            fermentum finibus efficitur.</p>
-                                        <h5>Peter Guptill</h5>
-                                        <h6>Proin blandit</h6>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="testimonial-img-grid">
-                                        <div class="testimonial-img t-img1">
-                                            <img src="images/ts2.jpg" alt="" />
-                                        </div>
-                                        <div class="testimonial-img">
-                                            <img src="images/ts3.jpg" alt="" />
-                                        </div>
-                                        <div class="testimonial-img t-img2">
-                                            <img src="images/ts1.jpg" alt="" />
-                                        </div>
-                                        <div class="clearfix"> </div>
-                                    </div>
-                                    <div class="testimonial-img-info">
-                                        <p>Morbi est est, mollis id diam a, pellentesque dignissim lorem. Sed malesuada
-                                            sed lacus sit amet vestibulum. Sed nibh purus, egestas eu orci vel, mollis
-                                            interdum orci.</p>
-                                        <h5>Mary Jane</h5>
-                                        <h6>Lorem ipsum</h6>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="testimonial-img-grid">
-                                        <div class="testimonial-img t-img1">
-                                            <img src="images/ts3.jpg" alt="" />
-                                        </div>
-                                        <div class="testimonial-img">
-                                            <img src="images/ts1.jpg" alt="" />
-                                        </div>
-                                        <div class="testimonial-img t-img2">
-                                            <img src="images/ts2.jpg" alt="" />
-                                        </div>
-                                        <div class="clearfix"> </div>
-                                    </div>
-                                    <div class="testimonial-img-info">
-                                        <p>Proin blandit rhoncus metus porta tristique. Praesent suscipit in erat a
-                                            tempor. Nullam tempor lectus ex, a auctor orci ultricies ac. Mauris sapien
-                                            neque, condimentum sit</p>
-                                        <h5>Steven Wilson</h5>
-                                        <h6>Proin blandit</h6>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"> </div>
-                        <script>
-                            // You can also use "$(window).load(function() {"
-                            $(function () {
-                                // Slideshow 4
-                                $("#slider3").responsiveSlides({
-                                    auto: true,
-                                    pager: false,
-                                    nav: false,
-                                    speed: 500,
-                                    namespace: "callbacks",
-                                    before: function () {
-                                        $('.events').append("<li>before event fired.</li>");
-                                    },
-                                    after: function () {
-                                        $('.events').append("<li>after event fired.</li>");
-                                    }
-                                });
-
-                            });
-                        </script>
-                        <!--banner Slider starts Here-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //testimonial -->
-    <!-- team -->
-    <div class="team" id="team">
-        <div class="container">
-            <div class="agileits-title">
-                <h3>Amazing Team</h3>
-            </div>
-            <div class="agileits-team-grids">
-                <div class="col-md-3 agileits-team-grid">
-                    <div class="team-info">
-                        <img src="images/t1.jpg" alt="">
-                        <div class="team-caption">
-                            <h4>Peter Parker</h4>
-                            <p>Fusce laoreet</p>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 agileits-team-grid">
-                    <div class="team-info">
-                        <img src="images/t2.jpg" alt="">
-                        <div class="team-caption">
-                            <h4>Johan Botha</h4>
-                            <p>Fusce laoreet</p>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 agileits-team-grid">
-                    <div class="team-info">
-                        <img src="images/t3.jpg" alt="">
-                        <div class="team-caption">
-                            <h4>Justo Congue</h4>
-                            <p>Fusce laoreet</p>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 agileits-team-grid">
-                    <div class="team-info">
-                        <img src="images/t4.jpg" alt="">
-                        <div class="team-caption">
-                            <h4>Steven Wilson</h4>
-                            <p>Fusce laoreet</p>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
-    <!-- //team -->
-    <!-- blog -->
-    <div id="blog" class="blog">
-        <div class="container">
-            <div class="agileits-title">
-                <h3>Our Blog</h3>
-            </div>
-            <div class="wthree-blog-grids">
-                <div class="col-md-6 w3-agileits-blog-grid">
-                    <div class="col-sm-4 col-xs-3 blog-left">
-                        <h4>24/01</h4>
-                        <ul>
-                            <li>Posted : <a href="#">Admin</a></li>
-                            <li>Likes : 31
-                            <li>
-                            <li>Comments : (4)</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-8 col-xs-9 blog-right">
-                        <a href="#" data-toggle="modal" data-target="#myModal">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Quisque imperdiet luctus gravida.</a>
-                        <p>Sed ut feugiat felis. Morbi tempor ut nibh id consectetur. Morbi turpis arcu, interdum at
-                            feugiat non, iaculis id dui. Cras vestibulum dapibus volutpat. Fusce id molestie mauris, nec
-                            pulvinar nibh. </p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="col-md-6 w3-agileits-blog-grid">
-                    <div class="col-sm-4 col-xs-3 blog-left">
-                        <h4>09/12</h4>
-                        <ul>
-                            <li>Posted : <a href="#">Admin</a></li>
-                            <li>Likes : 80
-                            <li>
-                            <li>Comments : (8)</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-8 col-xs-9 blog-right">
-                        <a href="#" data-toggle="modal" data-target="#myModal">Etiam ut nibh quis magna placerat euismod
-                            ac id eros. Cras eleifend nulla vel eros blandit.</a>
-                        <p>Duis sodales eleifend laoreet. Vestibulum luctus venenatis massa, in vulputate mi porta ac.
-                            Maecenas sollicitudin eros lectus, a rutrum nisi vulputate quis. Proin tempus, lectus vitae
-                            gravida</p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
-    <!-- //blog -->
-    <!-- mail -->
-    <div class="mail" id="mail">
-        <div class="container">
-            <div class="agileits-title">
-                <h3>Mail Us</h3>
-            </div>
-            <div class="w3_mail_grids">
-                <form action="https://sendmail.w3layouts.com/submitForm" method="post">
-                    <span class="input input--jiro">
-                        <input class="input__field input__field--jiro" type="text" id="input-10" name="w3lName"
-                            placeholder="Your Name" required="" />
-                        <label class="input__label input__label--jiro" for="input-10">
-                            <span class="input__label-content input__label-content--jiro">Your Name</span>
-                        </label>
-                    </span>
-                    <span class="input input--jiro">
-                        <input class="input__field input__field--jiro" type="email" id="input-11" name="w3lSender"
-                            placeholder="Your Email Address" required="" />
-                        <label class="input__label input__label--jiro" for="input-11">
-                            <span class="input__label-content input__label-content--jiro">Your Email</span>
-                        </label>
-                    </span>
-                    <span class="input input--jiro">
-                        <input class="input__field input__field--jiro" type="text" id="input-12" name="w3lSubject"
-                            placeholder="Subject" required="" />
-                        <label class="input__label input__label--jiro" for="input-12">
-                            <span class="input__label-content input__label-content--jiro">Subject</span>
-                        </label>
-                    </span>
-                    <textarea name="w3lMessage" placeholder="Message..." required=""></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-    </div>
-    <script src="js/classie.js"></script>
-    <script>
-        (function () {
-            // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-            if (!String.prototype.trim) {
-                (function () {
-                    // Make sure we trim BOM and NBSP
-                    var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-                    String.prototype.trim = function () {
-                        return this.replace(rtrim, '');
-                    };
-                })();
-            }
-
-            [].slice.call(document.querySelectorAll('input.input__field')).forEach(function (inputEl) {
-                // in case the input is already filled..
-                if (inputEl.value.trim() !== '') {
-                    classie.add(inputEl.parentNode, 'input--filled');
-                }
-
-                // events:
-                inputEl.addEventListener('focus', onInputFocus);
-                inputEl.addEventListener('blur', onInputBlur);
-            });
-
-            function onInputFocus(ev) {
-                classie.add(ev.target.parentNode, 'input--filled');
-            }
-
-            function onInputBlur(ev) {
-                if (ev.target.value.trim() === '') {
-                    classie.remove(ev.target.parentNode, 'input--filled');
-                }
-            }
-        })();
-    </script>
-    <!-- //mail -->
-    <!-- contact -->
-    <div id="contact" class="contact">
-        <div class="contact-row agileits-w3layouts">
-            <div class="col-md-5 contact-w3lsleft map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.948805392833!2d-73.99619098458929!3d40.71914347933105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1479793484055"></iframe>
-            </div>
-            <div class="col-md-7 contact-w3lsright">
-                <h6>Sed interdum interdum accumsan nec purus ac orci finibus facilisis sapien Sed interdum . </h6>
-                <div class="col-xs-6 address-row">
-                    <div class="col-xs-2 address-left">
-                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-xs-10 address-right">
-                        <h5>Visit Us</h5>
-                        <p>Broome St, Canada, <br>NY 10002, New York </p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="col-xs-6 address-row w3-agileits">
-                    <div class="col-xs-2 address-left">
-                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-xs-10 address-right">
-                        <h5>Mail Us</h5>
-                        <p><a href="mailto:info@example.com"> mail@example1.com </a></p>
-                        <p><a href="mailto:info@example.com"> mail@example2.com</a></p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="col-xs-6 address-row">
-                    <div class="col-xs-2 address-left">
-                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-xs-10 address-right">
-                        <h5>Call Us</h5>
-                        <p>+01 222 333 4444<br></p>
-                        <p>+01 222 333 5555</p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="col-xs-6 address-row">
-                    <div class="col-xs-2 address-left">
-                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                    </div>
-                    <div class="col-xs-10 address-right">
-                        <h5>Working Hours</h5>
-                        <p>Mon - Fri : 8:00 am to 10:30 pm<br>
-                            Sat - Sun : 9:00 am to 11:30 pm</p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-    <!-- //contact -->
     <!-- footer -->
-    <div class="footer" id="contacto">
+    <footer id="contacto">
         <div class="container">
             <div class="footer-top">
                 <div class="col-md-4 amet-sed amet-medium">
@@ -645,23 +281,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="contacto">
                         <div>
-                            <p><a href="mailto:pablo.loaiza@upb.edu.co">Pablo Loaiza Mejía</a></p>
-                            <p>pablo.loaiza@upb.edu.co</p>
+                            <p><a href="mailto:pablo.loaiza@upb.edu.co" target="_blank">Pablo Loaiza Mejía</a></p>
+                            <a href="https://wa.me/3006722101" target="_blank" style="padding: 5px;"><i
+                                    class="fa fa-whatsapp" style="color: white;"></i></a>
+                            <a href="mailto:pablo.loaiza@upb.edu.co" target="_blank" style="padding: 5px;"><i
+                                    class="fa fa-envelope" style="color: white;"></i></a>
                         </div>
                         <div>
-                            <p><a href="mailto:andres.saldarriagaa@upb.edu.co"> Andres Felipe Saldarriaga Arias</a></p>
-                            <p>andres.saldarriagaa@upb.edu.co</p>
+                            <p><a href="mailto:andres.saldarriagaa@upb.edu.co" target="_blank"> Andres Felipe
+                                    Saldarriaga Arias</a></p>
+                            <a href="https://wa.me/3106847478" target="_blank" style="padding: 5px;"><i
+                                    class="fa fa-whatsapp" style="color: white;"></i></a>
+                            <a href="mailto:andres.saldarriagaa@upb.edu.co" target="_blank" style="padding: 5px;"><i
+                                    class="fa fa-envelope" style="color: white;"></i></a>
                         </div>
                         <div>
-                            <p><a href="mailto:juanj.ortiz@upb.edu.co">Juan Jose Ortiz Patino</a></p>
-                            <p>juanj.ortiz@upb.edu.co</p>
+                            <p><a href="mailto:juanj.ortiz@upb.edu.co" target="_blank">Juan Jose Ortiz Patino</a></p>
+                            <a href="https://wa.me/3016197280" target="_blank" style="padding: 5px;"><i
+                                    class="fa fa-whatsapp" style="color: white;"></i></a>
+                            <a href="mailto:juanj.ortiz@upb.edu.co" target="_blank" style="padding: 5px;"><i
+                                    class="fa fa-envelope" style="color: white;"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="clearfix"> </div>
             </div>
         </div>
-    </div>
+    </footer>
     <!-- //footer -->
     <!-- copyright -->
     <div class="copyright">
