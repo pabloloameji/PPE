@@ -81,6 +81,7 @@ nav {
 	left: 0;
 	margin: 5%;
 	overflow: hidden;
+	z-index: 3;
 }
 
 .navbar-default {
@@ -1534,6 +1535,13 @@ ul.simplefilter {
 
 .copyright p a:hover {
 	color: #FFFFFF;
+}
+
+.contacto {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
 }
 
 /*-- //copyright --*/
