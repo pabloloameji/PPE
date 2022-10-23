@@ -37,9 +37,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
+    <script src="js/main.js"></script>
     <script src="js/md5.min.js"></script>
     <script src="js/login.js"></script>
-    <script src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -72,6 +73,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
 
+    <div id="ventana" class="ligthbox hidden">
+        <div class="contenido-ventana">
+            <span></span>
+            <h1></h1>
+            <p></p>
+            <button type="button" id="btn_cerrar_modal"></button>
+        </div>
+    </div>
+
+    <!-- //banner-->
     <!--/login -->
     <section class="banner-bottom py-5">
         <div class="container">
@@ -97,11 +108,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="content-input-field">
                             <button type="submit" id="btn_enviar" class="btn">Ingresar</button>
                         </div>
-                        <ul class="list-login-bottom">
-                            <li class="">
-                                <a href="register.html" class="">¿No tiene una cuenta?</a>
-                            </li>
-                        </ul>
+                        <a href="register.html" class="">¿No tiene una cuenta?</a>
+
                     </form>
                 </div>
             </div>
