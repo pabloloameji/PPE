@@ -1505,12 +1505,29 @@ footer {
 	color: #FFFFFF;
 }
 
+footer,
+footer .container,
+.foot-top,
+#contendor-contacto {
+	width: 100%;
+}
+
+.footer-title {
+	text-align: center;
+}
+
 .contacto {
 	display: flex;
-	justify-content: space-between;
+	justify-self: center;
+	align-self: center;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
 	width: 100%;
+}
+
+.contacto div {
+	margin: 15px;
 }
 
 /*-- //copyright --*/
