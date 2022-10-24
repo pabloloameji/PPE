@@ -1109,6 +1109,56 @@ ul.simplefilter {
 }
 
 /*-- //blog --*/
+
+/*-- registro --*/
+#contenedor-registro {
+	background-color: rgba(255, 153, 0, 0.5);
+	margin: 15px;
+	border-radius: 15px;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-grid {
+	display: flex;
+}
+
+.content-bottom {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+}
+
+#contenedor-registro .container {
+	display: flex;
+	align-self: center;
+	justify-self: center;
+}
+
+#contenedor-registro input[type="text"],
+input[type="email"],
+input[type="password"] {
+	align-self: center;
+	justify-self: center;
+	border-radius: 10px;
+	border: none;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.content-input-field button {
+	padding: 5px;
+	width: 100%;
+}
+
+.field-group {
+	width: 100%;
+}
+
+/*-- //registro --*/
+
 /*-- mail --*/
 .w3_mail_grids textarea {
 	outline: none;
@@ -1299,93 +1349,7 @@ ul.simplefilter {
 }
 
 /*-- //mail --*/
-/*-- contact --*/
-.contact-w3lsleft.map {
-	padding: 0;
-}
 
-.address-row {
-	margin-top: 3em;
-}
-
-.contact-w3lsright {
-	padding: 6em 6em;
-	background: #ececec;
-}
-
-.contact-w3lsright h6 {
-	line-height: 1.5em;
-	color: #212121;
-	font-size: 1.5em;
-	margin: 0;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-weight: 500;
-	letter-spacing: 1px;
-}
-
-.address-left {
-	padding: 0;
-	text-align: center;
-}
-
-.address-right {
-	padding-left: 2em;
-}
-
-.address-row span.glyphicon {
-	font-size: 1em;
-	border: 1px solid #afafaf;
-	padding: 1.6em 1em;
-	color: #212121;
-	-webkit-transition: .5s all;
-	-moz-transition: .5s all;
-	-o-transition: .5s all;
-	-ms-transition: .5s all;
-	transition: .5s all;
-}
-
-.address-row:hover span.glyphicon {
-	border-color: #FF9800;
-	color: #FF9800;
-	-webkit-transform: rotatey(360deg);
-	-moz-transform: rotatey(360deg);
-	transform: rotatey(360deg);
-	-o-transform: rotatey(360deg);
-	-ms-transform: rotatey(360deg);
-}
-
-.address-row h5 {
-	font-size: 1em;
-	color: #212121;
-	margin: 0 0 1em 0;
-	font-weight: 600;
-}
-
-.address-right p {
-	color: #999999;
-	font-size: .9em;
-	margin: 0;
-	line-height: 1.8em;
-}
-
-.address-right p a {
-	color: #FF9800;
-	text-decoration: none;
-}
-
-.address-right p a:hover {
-	color: #212121;
-}
-
-.map iframe {
-	width: 100%;
-	min-height: 526px;
-	border: none;
-	margin-bottom: -.5em;
-}
-
-/*-- //contact --*/
 /*-- footer --*/
 footer {
 	background: rgba(51, 51, 51, 0.5);
