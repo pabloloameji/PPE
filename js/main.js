@@ -23,10 +23,10 @@ let sesion_on = menu_html + `
 </li>`;
 let sesion_off = menu_html + `
 <li>
-<a href="login.html">INGRESAR</a>
+<a href="javascript:void(0)" id="item_3">INGRESAR</a>
 </li>
 <li>
-<a href="register.html">REGISTRAR</a>
+<a href="javascript:void(0)" id="item_4">REGISTRAR</a>
 </li>`;
 
 window.onload = function () {
@@ -73,9 +73,15 @@ function cerrarSesion() {
 function asignarNavegacion() {
     menu_items.push(document.getElementById("item_1"));
     menu_items.push(document.getElementById("item_2"));
+    menu_items.push(document.getElementById("item_3"));
+    menu_items.push(document.getElementById("item_4"));
+    menu_items.push(document.getElementById("item_5"));
 
     paginas["item_1"] = "index.html";
     paginas["item_2"] = "juegos.html";
+    paginas["item_3"] = "login.html";
+    paginas["item_4"] = "register.html";
+    paginas["item_5"] = "juegos.html";
 
     for (var i of menu_items) {
         i.addEventListener("click", abrirPagina);
@@ -114,7 +120,7 @@ function abrirPagina(evento) {
     let pagina = evento.target.id;
     let puede_ingresar = true;
 
-    if (pagina === "item_2") {
+    if (pagina === "item_2" || pagina === "item_5") {
         puede_ingresar = logeado;
     }
 
