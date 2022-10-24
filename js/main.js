@@ -44,6 +44,15 @@ window.onload = function () {
         iniciarRegistro();
     }
 
+    if (window.hasOwnProperty("pintarGaleria")) {
+        llenarProductos();
+        pintarGaleria();
+    }
+
+    if (window.hasOwnProperty("leerProductoActual")) {
+        leerProductoActual();
+    }
+
     asignarNavegacion();
     activarPaginaActual();
 }
@@ -67,7 +76,7 @@ function cambiarSesion(bandera) {
 
 function cerrarSesion() {
     let pagina_actual = location.pathname.split("/").pop();
-    return (pagina_actual === paginas["item_2"]);
+    return (pagina_actual === paginas["item_2"] || pagina_actual === paginas["item_5"]);
 }
 
 function asignarNavegacion() {

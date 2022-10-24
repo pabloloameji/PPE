@@ -1151,8 +1151,9 @@ input[type="password"] {
 	width: 100%;
 }
 
-.btn {
+.btn-ingreso {
 	border-radius: 10px;
+	border: none;
 	width: 100%;
 	color: #FFFFFF;
 	font-weight: 900;
