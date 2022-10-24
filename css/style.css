@@ -1110,31 +1110,30 @@ ul.simplefilter {
 
 /*-- //blog --*/
 
-/*-- registro --*/
-#contenedor-registro {
+/*-- registro/login--*/
+.content-bottom {
 	background-color: rgba(255, 153, 0, 0.5);
 	margin: 15px;
+	margin-right: 0;
 	border-radius: 15px;
 	padding: 15px;
+	width: 100%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 }
 
-.content-grid {
+#formulario {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: max-content;
 }
 
-.content-bottom {
-	display: flex;
-	justify-self: center;
-	align-self: center;
-}
-
-#contenedor-registro .container {
-	display: flex;
-	align-self: center;
-	justify-self: center;
+.content-bottom h2 {
+	color: #FF9800;
+	font-weight: 900;
 }
 
 #contenedor-registro input[type="text"],
@@ -1148,16 +1147,19 @@ input[type="password"] {
 	margin-bottom: 10px;
 }
 
-.content-input-field button {
-	padding: 5px;
+.content-input-field {
 	width: 100%;
 }
 
-.field-group {
+.btn {
+	border-radius: 10px;
 	width: 100%;
+	color: #FFFFFF;
+	font-weight: 900;
+	background-color: #FF9800;
 }
 
-/*-- //registro --*/
+/*-- //registro/login --*/
 
 /*-- mail --*/
 .w3_mail_grids textarea {
