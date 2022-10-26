@@ -39,8 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
     <script src="js/main.js"></script>
     <script src="js/md5.min.js"></script>
-    <script src="js/login.js"></script>
-
+    <script src="js/registro.js"></script>
 </head>
 
 <body>
@@ -73,12 +72,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!--/login -->
-    <section class="banner-bottom py-5" id="contenedor-login">
+    <section class="banner-bottom py-5" id="contenedor-registro">
         <div class="container">
             <div class="content-grid">
                 <div class="content-bottom">
+
                     <form action="" id="formulario">
-                        <h2>INGRESAR</h2>
+                        <h2>REGISTRAR</h2>
+                        <div class="field-group">
+
+                            <div class="content-input-field">
+                                <input name="nombre" id="nombre" type="text" value="" placeholder="Ingrese el nombre"
+                                    required="">
+                            </div>
+                        </div>
                         <div class="field-group">
 
                             <div class="content-input-field">
@@ -88,21 +95,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="field-group">
                             <div class="content-input-field">
-                                <input name="clave" id="clave" type="Password" placeholder="Ingresa la clave"
+                                <input pattern=".{6,}" name="clave" id="clave" type="Password"
+                                    title="La clave debe tener minimo 6 caracteres" placeholder="Ingrese la clave"
                                     required="">
                             </div>
                         </div>
                         <div class="content-input-field">
-                            <button type="submit" id="btn_enviar" class="btn-ingreso">Ingresar</button>
+                            <button type="submit" id="btn_enviar" class="btn-ingreso">Registrarse</button>
                         </div>
-                        <a href="register.html" class="">¿No tiene una cuenta?</a>
-
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /login -->
 
     <!-- footer -->
     <footer id="contacto">
@@ -150,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- //copyright -->
     <script src="js/jarallax.js"></script>
-    <!-- <script src="js/SmoothScroll.min.js"></script> -->
+    <!-- < script src = "js/SmoothScroll.min.js" ></ > -->
     <script type="text/javascript">
         /* init Jarallax */
         $('.jarallax').jarallax({
